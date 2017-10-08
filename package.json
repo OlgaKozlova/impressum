@@ -1,0 +1,15 @@
+{
+  "name": "impressum",
+  "version": "0.1.0",
+  "description": "A SEO-friendly static website generator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Victor Grinchik",
+    "email": "victor.grinchik@gmail.com",
+    "url": "https://grinchik.com/"
+  },
+  "license": "ISC",
+  "private": true
+}
