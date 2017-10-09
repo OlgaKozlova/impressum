@@ -11,5 +11,14 @@
     "url": "https://grinchik.com/"
   },
   "license": "ISC",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "ejs": "^2.5.7",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "js-yaml": "^3.10.0",
+    "marked": "^0.3.6"
+  }
 }
