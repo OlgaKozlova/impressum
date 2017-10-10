@@ -1,6 +1,7 @@
 'use strict';
 
 const path = require('path');
+const os = require('os');
 const ejs = require('ejs');
 const yaml = require('js-yaml');
 const marked = require('marked');
@@ -64,7 +65,7 @@ module.exports = function (grunt) {
 
     grunt.registerMultiTask('render', 'Render MD to HTML', function () {
         for (const file of this.files) {
-            const mdFileParts = grunt.file.read(file.src).split("---\n");
+            const mdFileParts = grunt.file.read(file.src).split(`---${os.EOL}`);
 
             const meta = yaml.safeLoad(mdFileParts[1]);
             const content = marked(mdFileParts[2]);
